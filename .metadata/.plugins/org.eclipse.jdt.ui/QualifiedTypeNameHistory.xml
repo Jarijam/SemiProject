@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.vo.UserVO"/>
+<fullyQualifiedTypeName name="com.vo.Product"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="mqtt.MyMqtt_Pub_client"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.vo.LedVO"/>
+<fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttClient"/>
+<fullyQualifiedTypeName name="com.mqtt.MyMqtt_Pub_client"/>
+<fullyQualifiedTypeName name="com.tcp.SerialArduinoLEDControl"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.controller.FcmUtil"/>
+<fullyQualifiedTypeName name="com.tcp.ArduinoSerialUsingEvent"/>
+<fullyQualifiedTypeName name="com.http.SemiSendHttp01"/>
+<fullyQualifiedTypeName name="com.http.SemiSendHttp01.SendThread"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="com.tcp.SerialListener"/>
+<fullyQualifiedTypeName name="org.rosuda.REngine.RList"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+</qualifiedTypeNameHistroy>

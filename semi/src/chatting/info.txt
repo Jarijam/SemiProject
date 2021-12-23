@@ -1,0 +1,22 @@
+[미션1]
+서버와 클라이언트가 1:1 로 채팅
+ - ConsoleChatClient
+   클라이언트
+   서버로 접속하며 접속을 성공하면 ClientReceiveThread 와 ClientSenderThread를 실행하기
+   
+ - ConsoleChatServer
+   서버
+   클라이언트 접속을 대기하며 클라이언트가 접속하면 통신할 수 있도록
+   ServerReceiveThread와 ServerSenderThread를 실행하기
+   
+ - ServerReceiveThread
+   클라이언트가 보내오는 메시지를 계속 읽어서 콘솔에 출력할 수 있도록 쓰레드로 작성
+   
+ - ServerSenderThread
+   서버가 키보드로 입력한 메시지를 클라이언트로 보낼 수 있도록 쓰레드로 작성
+   
+ - ClientReceiveThread
+   서버가 보내오는 메시지를 계속 읽어서 콘솔에 출력할 수 있도록 쓰레드로 작성
+   
+ - ClientSenderThread
+   클라이언트가 키보드로 입력한 메시지를 서버로 보낼 수 있도록 쓰레드로 작성
