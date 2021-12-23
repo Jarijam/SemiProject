@@ -4,7 +4,7 @@ import java.io.FileOutputStream;
 import org.springframework.web.multipart.MultipartFile;
 
 public class Util {
-	// ë°›ì•„ì˜¨ ë°ì´í„°ë¥¼ ì„œë²„ì— ì´ë¯¸ì§€ë¥¼ ì˜¬ë¦°ë‹¤.
+	// ¹Ş¾Æ¿Â µ¥ÀÌÅÍ¸¦ ¼­¹ö¿¡ ÀÌ¹ÌÁö¸¦ ¿Ã¸°´Ù.
 	public static void saveFile(MultipartFile mf) {
 		String dir = "C:\\semiproject\\sp\\web\\img\\";
 		byte [] data;

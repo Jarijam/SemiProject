@@ -1,12 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<%
-	String id = request.getParameter("id");
-	String pwd = request.getParameter("pwd");
-	if(id.equals("qq") && pwd.equals("11")){
-		out.print("1");
-	}else{
-		out.print("2");
-	}
-%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<h1>Login Page</h1>
+<form action="loginimpl.mc" method="post">
+ID<input type="text" name="id"><br>
+PWD<input type="text" name="pwd"><br>
 
+<input type="submit" value="LOGIN"><br>
+</form>

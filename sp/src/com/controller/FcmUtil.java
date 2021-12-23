@@ -13,26 +13,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.frame.Service;
-import com.vo.Product;
 
 @Controller
 public class FcmUtil {
-	public final static String API_KEY = "AAAA-Z3m-Ws:APA91bFh6iFE-GxpWcBhPctAK-"
-			+ "CuvlCDO1xuuSUO-ye7ehu6FJHVLXjrFkEIsD7G8xJXulEQy0LGa1YGnJcJ98orhfo0yH_"
-			+ "dHgGVnKcfrBUGpAAkRXTxsD36CfEpuk0Ndvh2wIyxNESi";
+	public final static String API_KEY = "AAAAj786B0A:APA91bEswaGH2EkUHyoeZimlPM6T70o39tf-uIEO93Q2KKB43UlbE3LVaugXvU9Fdb2gj3siFR218BSvdyFIPQN73_pmm_oynYPGbUFRZpbN-kFrrnVXGAdFesdvhk5-IfMz-r9aK_mw"; //서버키 값
 	public final static String URL = "https://fcm.googleapis.com/fcm/send";
 
-//	@RequestMapping("/sendfcm.mc")
-//	public void sendfcm() {
-//		try {
-//			sendServer();
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
-
-	public static void sendServer(
-			int f_temp, int f_humi) throws Exception{
+	public static void sendServer(String LED) throws Exception{
 		URL url = new URL(URL);
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setDoOutput(true);
@@ -43,23 +30,15 @@ public class FcmUtil {
 		conn.setDoOutput(true);
 
 		JSONObject notification = new JSONObject();
-
-		notification.put("title", "타이틀입니다");
-		notification.put("body", "바디부분입니다.");
-		
-		JSONObject sdata = new JSONObject();
-		sdata.put("c1", f_temp+"");
-		sdata.put("c2", f_humi+"");
-		
+		notification.put("title", "LED 상태 변동");
+		notification.put("body", "LED ON");
 		
 		JSONObject body = new JSONObject();
 		body.put("notification", notification);
-		body.put("data",sdata);
-		body.put("to", "eOY728JTRLmSGJQ3jNqfI7:APA91bHh2IJkYP8yY_fys9vCJN4j2UhwPEjqjbsoYHuuc0bYTp9_l9VjmE_2BEFR5MK6osdqyRyLTMs2mxa3TItAsVa7q-sjXMCOiiV6Av6Zxt5G_RZl_6kr2AWBqL9hQKDaX1SYvyUe");
+		body.put("to", "cw3Pu9h7Q3eTygl_PtxbQ3:APA91bH-X4SYrm3eXICSqTSuuhciDYAkhVJB4byBOqhUWLwnouEdpE20SzmJmUuBVne4VAHLWz3KRb9DwVm9tW106yiloYUJt_TZQ35EziSC1iWbtOdBIL2XE2aE9ozDNI_M5XOW6b74"); // 토큰값
 
 		OutputStream os = conn.getOutputStream();
 
-		// �������� ������ �ѱ� ������ ����� �Ʒ�ó�� UTF-8�� ���ڵ�
 		os.write(body.toJSONString().getBytes("UTF-8"));
 		os.flush();
 		os.close();

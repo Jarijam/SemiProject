@@ -30,12 +30,6 @@ public class Product {
 		this.imgname = imgname;
 	}
 	
-	public Product(String name, double price, String imgname) {
-		this.name = name;
-		this.price = price;
-		this.imgname = imgname;
-	}
-	
 	
 	
 	public Product(int id, String name, double price, Date regdate, String imgname, MultipartFile mf) {

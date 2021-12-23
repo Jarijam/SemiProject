@@ -5,15 +5,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="URF-8">
+<meta charset="EUC-KR">
 <title>Insert title here</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/annotations.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
 <style>
 /* Global CSS Start ****************/
 *{
@@ -120,8 +115,8 @@ footer{
 <c:choose>
 	<c:when test="${loginid == null }">
 		<li><a href="login.mc">LOGIN</a></li>
-		<li><a href="register.mc">REGISTER</a></li>
-		<li><a href="about.mc">ABOUT US</a></li>
+		<li><a href="#">REGISTER</a></li>
+		<li><a href="#">ABOUT US</a></li>
 	</c:when>
 	<c:otherwise>
 		<li>${loginid }님</li>
@@ -141,8 +136,6 @@ footer{
 		<li><a href="ulist.mc">LIST</a></li>
 		<li><a href="productadd.mc">PADD</a></li>
 		<li><a href="productlist.mc">PLIST</a></li>
-		<li><a href="pchartpage.mc">P_CHART</a></li>
-		<li><a href="rchartpage.mc">R_CHART</a></li>
 	</ul>
 </header>
 <nav><a href="index.html">HOME</a></nav>
